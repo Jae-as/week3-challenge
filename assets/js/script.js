@@ -10,6 +10,9 @@ var generateBtn = document.querySelector("#generate-password-popup");
 var modal = document.querySelector(".modal");
 var closeButton = document.querySelector(".close-button");
 var charForm = document.querySelector("password-characteristics");
+var lengthValidation = document.querySelector("#password-length-error");
+var mincheckValidation = document.querySelector("#character-checklist-error");
+var submitValidation = document.querySelector("#submit-error");
 
 
 // Determine Password Characteristics
@@ -20,9 +23,7 @@ var charForm = document.querySelector("password-characteristics");
     specialchar: getSpecialcharacters
  }
 
-
 // Event Listeners
-
 generateBtn.addEventListener('click', toggleModal);
 setOptions.addEventListener('click', () => {
 
@@ -78,12 +79,27 @@ for(let i = 0; i < length; i += optionsCount) {
     });
 }
 
+// Validation checks within finalPassword log
+
 console.log(generatedPassword);
 var finalPassword = generatedPassword.slice(0, length);
+var lengthCheck = finalPassword.length;
+console.log (lengthCheck);
+
+if (lengthCheck <= 7){
+    return "Enter valid password length (no less than 7 characters)!";
+
+} if (lengthCheck >=129){
+    return "Enter valid password length (no more than 129 characters)!";
+}
+
+else {
+
 return finalPassword;
 
-console.log(finalPassword)
 }
+}
+
 
 // Math.floor to round down || Math.random to select random between range
 // 26 because 26 letters in alphabet
