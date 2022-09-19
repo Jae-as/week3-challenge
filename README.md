@@ -33,8 +33,8 @@ The following images show the web application's appearance and functionality:
 ![Image of prompts](./assets/images/screenshot1.png)
 ![Image of min validation](./assets/images/screenshot2.png)
 ![Image of max validation](./assets/images/screenshot3.png)
-![Image of select at least one character type](./assets/03-javascript-homework-demo.png)
-![Image of password generated](./assets/03-javascript-homework-demo.png)
+![Image of select at least one character type](./assets/images/screenshot4.png)
+![Image of password generated](./assets/images/screenshot5.png)
 
 ## Deployed Application Link
 https://jae-as.github.io/week3-challenge/
