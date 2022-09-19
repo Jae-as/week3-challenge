@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <section class="card">
+        <header class="card-header">
+          <h2>Generate a Password</h2>
+        </header>
+        <body class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </body>
+        <footer class="card-footer">
+          <button id="generate-password-popup" class="trigger">Generate Password</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h1>Set Password Characteristics</h1>
+                    <h3>Password can be no less than 8 characters and no more than 128 characters</h3>
+                    <form action="">
+                        <div>
+                        <input type="number" id="password-length" step="1" min="8" max="128" required />
+                        <label for="password-length">Set password length</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="password-uppercase" checked>
+                        <label for="password-uppercase">Should I include uppercase characters?</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="password-lowercase" checked>
+                        <label for="password-lowercase">Should I include lowercase characters?</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="password-numeric" checked>
+                        <label for="password-lowercase">Should I include numeric characters?</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="password-specialchar" checked>
+                        <label for="password-lowercase">Should I include special characters?</label>
+                        </div>
+                    </form>
+                    <button id="set-password-options" class="option">Set</button>
+                </div>
+            </div>
+        </footer>
+    </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
