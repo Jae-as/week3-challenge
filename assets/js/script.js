@@ -10,9 +10,6 @@ var generateBtn = document.querySelector("#generate-password-popup");
 var modal = document.querySelector(".modal");
 var closeButton = document.querySelector(".close-button");
 var charForm = document.querySelector("password-characteristics");
-var lengthValidation = document.querySelector("#password-length-error");
-var mincheckValidation = document.querySelector("#character-checklist-error");
-var submitValidation = document.querySelector("#submit-error");
 
 
 // Determine Password Characteristics
