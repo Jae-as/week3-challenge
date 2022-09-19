@@ -29,9 +29,10 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Mock-up
 The following images show the web application's appearance and functionality:
-![Image of landing page](./assets/screenshot1.png)
-![Image of min validation](./assets/screenshot2.png)
-![Image of max validation](./assets/screenshot3.png)
+![Image of landing page](./assets/images/03-javascript-homework-demo.png)
+![Image of prompts](./assets/images/screenshot1.png)
+![Image of min validation](./assets/images/screenshot2.png)
+![Image of max validation](./assets/images/screenshot3.png)
 ![Image of select at least one character type](./assets/03-javascript-homework-demo.png)
 ![Image of password generated](./assets/03-javascript-homework-demo.png)
 
