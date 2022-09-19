@@ -84,10 +84,10 @@ var lengthCheck = finalPassword.length;
 console.log (lengthCheck);
 
 if (lengthCheck <= 7){
-    return "Enter valid password length (no less than 7 characters)!";
+    return "Enter valid password length (no less than 8 characters)!";
 
 } if (lengthCheck >=129){
-    return "Enter valid password length (no more than 129 characters)!";
+    return "Enter valid password length (no more than 128 characters)!";
 }
 
 else {
