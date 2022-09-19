@@ -144,6 +144,21 @@ button[disabled] {
     clear: both;
   }
 
+.modal button {
+    border: none;
+    background-color: hsl(360, 91%, 36%);
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 8px 8px 8px 6px;
+    padding: 1px 6px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
 .close-button {
     float: right;
     width: 1.5rem;
@@ -168,6 +183,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
+
 
 #password {
   -webkit-appearance: none;

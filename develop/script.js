@@ -9,6 +9,7 @@ var setOptions = document.querySelector('#set-password-options');
 var generateBtn = document.querySelector("#generate-password-popup");
 var modal = document.querySelector(".modal");
 var closeButton = document.querySelector(".close-button");
+var charForm = document.querySelector("password-characteristics");
 
 
 // Determine Password Characteristics
@@ -19,10 +20,12 @@ var closeButton = document.querySelector(".close-button");
     specialchar: getSpecialcharacters
  }
 
+
 // Event Listeners
 
 generateBtn.addEventListener('click', toggleModal);
 setOptions.addEventListener('click', () => {
+
     var length = +passwordLength.value;
     console.log (length);
     console.log (typeof length);
@@ -79,6 +82,7 @@ console.log(generatedPassword);
 var finalPassword = generatedPassword.slice(0, length);
 return finalPassword;
 
+console.log(finalPassword)
 }
 
 // Math.floor to round down || Math.random to select random between range
@@ -128,5 +132,4 @@ function windowOnClick(event) {
   }
 }
 
-// Validation functions
 
