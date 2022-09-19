@@ -41,6 +41,7 @@ setOptions.addEventListener('click', () => {
 
 });
 closeButton.addEventListener("click", toggleModal);
+setOptions.addEventListener('click', toggleModal);
 
 // Password Generator Functions
 function generatePassword (length, lowercase, uppercase, numeric, specialchar) {
